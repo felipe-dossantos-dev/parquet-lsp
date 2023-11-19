@@ -1,0 +1,23 @@
+{
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "antlr4.generation": {
+        "mode": "external",
+        "language": "Python3",
+        "listeners": true,
+        "visitors": true
+    },
+    "python.analysis.extraPaths": [
+        "./parquet-lsp"
+    ],
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./parquet-lsp",
+        "-p",
+        "*test*.py"
+    ],
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestEnabled": true
+}
